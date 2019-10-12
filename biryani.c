@@ -99,6 +99,7 @@ int main(){
     if(pthread_mutex_init(&studentServedLock, NULL)!=0){
         printf("chefQueueLock mutex has failed\n");
     }
+    printf("input format : n, m, k\n");
     scanf("%d %d %d", &n, &m, &k);
     spawnRobots(m, n, k);
     spawnServingTables(n, m, k);
